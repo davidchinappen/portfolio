@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* font for webpage */
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 a{
     text-decoration: none;
     color: navy;
@@ -25,22 +20,20 @@ h1 {
     text-align: center;
     font-size: 1.2em;
     padding: 10px;
-}
-
-h3 {
-    font-weight: normal;
-    
+    margin: 0 10px;
 }
 
 p {
     padding: 10px;
     text-align: justify;
+    word-break: break-all;
 }
 
 header, main, footer {
     outline: 1px solid red;
     max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -55,50 +48,43 @@ main {
 }
 
 section {
-    margin: 10px auto;
+    width: 100%;
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+
 }
 
 article {
-    padding: 10px;
-    border: 1px solid lightgrey;
-}
-
-/* Logo*/
-.logo img{
-    max-width: 250px;
-    text-align: left;
-}
-
-/* hero*/
-
-/*services*/
-.service-2{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
     margin: 10px auto;
+    padding: 20px;
+
 }
 
-/* Portfolio*/
-.portfolio-container h1, .contact-container h1{
-    background: lightgrey;
-    margin-bottom: 10px;
+.small-images {
+    display: flex;
+    flex-direction: row;
 }
+
+.s-img-1, .s-img-2 {
+    flex: 1;
+}
+
 
 /* Contact*/
 
-.adresse-details {
-    outline: 1px solid red;
-    padding: 10px;
-    text-align: left;
-
-}
-
-.adresse-details p{
+.adresse-details p {
     padding: 5px;
 }
 
 .form-contact {
-    outline: 1px solid red;
-    padding: 10px;
-    margin-top: 10px;    
+    margin-top: 10px;
+    text-align: left;    
 }
 
 .form-contact input, .form-contact textarea {
@@ -114,4 +100,85 @@ button {
 }
 
 /* Copyright*/
+.copyright {
+    color: white;
+}
+
+/** MEDIA QUERIES **/
+
+/* Tablets */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section, .about, .contact {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .about {
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .about figure {
+        outline: 1px solid blue;
+        flex: 1;
+    }
+
+    .about-text {
+        flex: 2;
+    }
+
+    .portfolio-container, .contact-container {
+        flex-flow: column;
+    }
+
+    .portfolio-container h1 {
+        flex: 1;
+    }
+
+    .portfolio-images, .contact {
+        margin: 0 auto;
+    }
+
+    .portfolio-images {
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .l-img-1, .l-img-2 {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .small-images {
+        flex-flow: column;
+        align-content: space-between;
+        flex: 0.5;
+    }
+
+    .adresse-details {
+        flex: 1;
+        text-align: left;
+    }
+
+    .adresse-details h3 {
+        margin-bottom: 10px;
+    }
+}
+
+
+
 
