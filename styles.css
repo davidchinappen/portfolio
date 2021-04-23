@@ -10,11 +10,108 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-    outline: 1px solid blue;
+a{
+    text-decoration: none;
+    color: navy;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2em;
     padding: 10px;
+}
+
+h3 {
+    font-weight: normal;
+    
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
 }
 
 header, main, footer {
     outline: 1px solid red;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
 }
+
+header, footer {
+    background:darkgrey;
+    text-align:center;
+    
+}
+
+main {
+    background: #e6e6e6;
+}
+
+section {
+    margin: 10px auto;
+}
+
+article {
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+
+/* Logo*/
+.logo img{
+    max-width: 250px;
+    text-align: left;
+}
+
+/* hero*/
+
+/*services*/
+.service-2{
+    margin: 10px auto;
+}
+
+/* Portfolio*/
+.portfolio-container h1, .contact-container h1{
+    background: lightgrey;
+    margin-bottom: 10px;
+}
+
+/* Contact*/
+
+.adresse-details {
+    outline: 1px solid red;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.adresse-details p{
+    padding: 5px;
+}
+
+.form-contact {
+    outline: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;    
+}
+
+.form-contact input, .form-contact textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    resize: none;
+    padding: 10px;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+}
+
+/* Copyright*/
+
