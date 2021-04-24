@@ -1,16 +1,15 @@
-/* reset css */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: navy;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -34,13 +33,12 @@ header, main, footer {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px;;
 }
 
 header, footer {
-    background:darkgrey;
-    text-align:center;
-    
+    background: darkgrey;
+    text-align: center;
 }
 
 main {
@@ -52,7 +50,6 @@ section {
     outline: 1px solid red;
     display: flex;
     flex-direction: column;
-
 }
 
 article {
@@ -63,7 +60,6 @@ article {
     text-align: center;
     margin: 10px auto;
     padding: 20px;
-
 }
 
 .small-images {
@@ -75,16 +71,14 @@ article {
     flex: 1;
 }
 
-
-/* Contact*/
-
+/* contact */
 .adresse-details p {
     padding: 5px;
 }
 
 .form-contact {
     margin-top: 10px;
-    text-align: left;    
+    text-align: left;
 }
 
 .form-contact input, .form-contact textarea {
@@ -99,7 +93,7 @@ button {
     padding: 10px;
 }
 
-/* Copyright*/
+/* Copyright */
 .copyright {
     color: white;
 }
@@ -128,7 +122,7 @@ button {
     .about {
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 20px;
     }
 
     .about figure {
@@ -142,6 +136,7 @@ button {
 
     .portfolio-container, .contact-container {
         flex-flow: column;
+        padding: 10px;
     }
 
     .portfolio-container h1 {
@@ -179,6 +174,28 @@ button {
     }
 }
 
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .hero-container {
+        position: relative;
+    }
+    .hero-text {
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        right: 5%;
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        max-width: 250px;
+    }
 
-
-
+    .about-text {
+        margin-left: 20px;
+        padding: 0 20px;
+        align-self: flex-start;
+    }
+}
