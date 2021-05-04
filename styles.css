@@ -191,9 +191,3 @@ button {
         align-self: flex-start;
     }
 }
-
-.service-1:hover .overlay{
-
-    transform: scale(1);
-
-}
