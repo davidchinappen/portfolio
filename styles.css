@@ -60,6 +60,10 @@ article {
     padding: 20px;
 }
 
+.logo {
+    min-width: 350px;
+}
+
 .small-images {
     display: flex;
     flex-direction: row;
